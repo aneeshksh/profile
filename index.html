@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aneesh Hiremath - Senior Techno-Commercial Leader, Product & Platform Leader, AI, Genomics, Cloud Transformation and Enterprise SaaS." />
+  <title>Aneesh Hiremath | Product & Platform Leader</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #171923;
+      --muted: #5f6675;
+      --line: #e4e7ec;
+      --accent: #1d4ed8;
+      --accent-soft: #e8f1ff;
+      --accent-dark: #0f2f66;
+      --accent-mid: #2563eb;
+      --shadow: 0 20px 50px rgba(20, 20, 40, 0.08);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #eaf3ff 0, transparent 34%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 36px 22px 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: stretch;
+      margin-bottom: 28px;
+    }
+
+    .hero-card,
+    .side-card,
+    .section {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .hero-card {
+      padding: 42px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .headline {
+      margin: 20px 0 0;
+      font-size: clamp(20px, 2.5vw, 28px);
+      line-height: 1.25;
+      color: var(--accent-dark);
+      font-weight: 750;
+      max-width: 780px;
+    }
+
+    .summary {
+      margin: 22px 0 0;
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 820px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 750;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .side-card {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+
+
+    .profile-photo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .profile-photo {
+      width: 104px;
+      height: 104px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      box-shadow: 0 12px 28px rgba(15, 47, 102, 0.18);
+      background: var(--accent-soft);
+    }
+
+    .profile-mini {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .profile-mini strong {
+      display: block;
+      color: var(--accent-dark);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .contact-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 20;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      box-shadow: 0 16px 34px rgba(29, 78, 216, 0.28);
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    .contact-float:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .contact-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--accent);
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .contact-list strong {
+      display: block;
+      color: var(--text);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 16px;
+      border-radius: 16px;
+      background: #f7fbff;
+      border: 1px solid #dbeafe;
+    }
+
+    .metric span {
+      display: block;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 850;
+      color: var(--accent);
+      letter-spacing: -0.04em;
+    }
+
+    .metric small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: 32px;
+      margin-top: 22px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .section-kicker {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: #343947;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .experience {
+      display: grid;
+      gap: 28px;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .role:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .role-meta h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .company {
+      margin: 6px 0 0;
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    .dates {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .role-content h4 {
+      margin: 0 0 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-dark);
+    }
+
+    ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+      color: #303644;
+    }
+
+    li { margin: 8px 0; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .mini-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .mini-card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .mini-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 28px;
+    }
+
+
+
+    .button.contact-trigger {
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .contact-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #f7fbff;
+      border: 1px solid #dbeafe;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: rgba(15, 23, 42, 0.58);
+      backdrop-filter: blur(6px);
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      width: min(760px, 100%);
+      max-height: 88vh;
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 28px 90px rgba(15, 23, 42, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 16px;
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+    }
+
+    .modal-header h2 {
+      font-size: 22px;
+      margin: 0 0 6px;
+      color: var(--accent-dark);
+    }
+
+    .modal-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .modal-close {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--text);
+      font-size: 22px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .form-frame-wrap {
+      height: min(650px, 72vh);
+      background: #f8fafc;
+    }
+
+    .form-frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .contact-float {
+        right: 16px;
+        bottom: 16px;
+        min-height: 48px;
+        padding: 0 14px;
+      }
+
+      .modal-overlay {
+        padding: 12px;
+      }
+
+      .modal-header {
+        padding: 18px;
+      }
+
+      .form-frame-wrap {
+        height: 72vh;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .hero,
+      .role,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .section,
+      .side-card {
+        padding: 24px;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-kicker { margin-top: 6px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { padding: 0; }
+      .hero-card, .side-card, .section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+      .button, .contact-float { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="assets/images/profile-photo.jpg" alt="Aneesh Hiremath profile photo" />
+          <div class="profile-mini"><strong>Senior Techno-Commercial Leader</strong>Product, platforms, genomics and healthtech commercialization</div>
+        </div>
+        <div class="eyebrow">Senior Techno-Commercial Leader</div>
+        <h1>Aneesh Hiremath</h1>
+        <p class="headline">Product & Platform Leader | P&L Owner | AI, Genomics & Cloud Transformation | Enterprise SaaS & Next-Gen Healthtech</p>
+        <p class="summary">
+          Product operations and strategy leader with 17+ years of cross-industry experience across healthcare, digital platforms, enterprise technology and innovation-led startups. Experienced in product lifecycle management, commercialization, portfolio growth, product analytics, cross-functional governance and GTM execution in regulated, multi-market environments.
+        </p>
+        <div class="cta-row">
+          <button class="button contact-trigger" type="button" data-open-contact>Request Contact Details</button>
+          <a class="button" href="https://www.linkedin.com/in/aneeshhiremath/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="side-card">
+        <div class="contact-list">
+          <div><strong>Contact</strong><button class="button contact-trigger" type="button" data-open-contact>Request contact details</button></div>
+          <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/aneeshhiremath/" target="_blank" rel="noopener">linkedin.com/in/aneeshhiremath</a></div>
+          <div class="contact-note">Direct phone and email are shared after a short recruiter/contact request. This helps reduce spam while keeping the page publicly shareable.</div>
+        </div>
+        <div class="metric-grid">
+          <div class="metric"><span>17+</span><small>Years across tech, healthcare, SaaS and platforms</small></div>
+          <div class="metric"><span>$20M</span><small>Product portfolio commercialization experience</small></div>
+          <div class="metric"><span>$7.5M</span><small>Product performance and pipeline analytics tracked</small></div>
+          <div class="metric"><span>21</span><small>Countries supported through digital strategy</small></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Core Strengths</h2>
+        <p class="section-kicker">Product, Strategy, Technology and Commercialization</p>
+      </div>
+      <div class="chips">
+        <span class="chip">Strategic Product Ownership</span>
+        <span class="chip">Product Operations</span>
+        <span class="chip">Product Lifecycle Management</span>
+        <span class="chip">Portfolio Strategy</span>
+        <span class="chip">Product Analytics</span>
+        <span class="chip">GTM Strategy</span>
+        <span class="chip">Market Segmentation</span>
+        <span class="chip">Cross-functional Governance</span>
+        <span class="chip">AI, Cloud & Data Consulting</span>
+        <span class="chip">Healthcare Data Platforms</span>
+        <span class="chip">Enterprise SaaS</span>
+        <span class="chip">Strategic Alliances</span>
+        <span class="chip">Investor Relations</span>
+        <span class="chip">Data Privacy & Compliance</span>
+        <span class="chip">Contract Negotiations</span>
+        <span class="chip">AWS</span>
+        <span class="chip">SQL / PLSQL</span>
+        <span class="chip">BI & Data Warehousing</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Work Experience</h2>
+        <p class="section-kicker">Selected achievements and leadership themes</p>
+      </div>
+
+      <div class="experience">
+        <article class="role">
+          <div class="role-meta">
+            <h3>Product Owner, Consumer Genomics</h3>
+            <p class="company">Karkinos Healthcare</p>
+            <p class="dates">Jun 2022 - Present</p>
+          </div>
+          <div class="role-content">
+            <h4>Executive Advisory, Strategy, AI-driven Innovation & Business Resilience</h4>
+            <ul>
+              <li>Supported leadership during major organization restructuring by stabilizing revenue operations, supported launch of a new technology driven revenue stream, strengthening collections and operational processes and supporting 90% customer retention during the transition.</li>
+              <li>Drove cross-functional product execution with engineering teams across AI/ML, cloud and full-stack development to build internal platforms for compliance, operations, process efficiency and execution governance.</li>
+              <li>Partnered with CTO and leadership to drive data-backed decision-making across product, portfolio and revenue planning.</li>
+              <li>Spearheaded the launch and scale of a direct-to-consumer AI-powered genomics vertical focused on whole genome sequencing for early detection and prevention of cancer, cardiac and chronic conditions.</li>
+            </ul>
+            <h4>Platform Commercialization & Global Market Expansion</h4>
+            <ul>
+              <li>Built and tracked product performance and pipeline analytics of $7.5M across regions, enabling data-driven prioritization of GTM investments and portfolio growth opportunities.</li>
+              <li>Applied market segmentation and opportunity sizing frameworks to activate 18 strategic partnerships and 8 POCs.</li>
+              <li>Championed North American and South Asian market entry through differentiated positioning and competitive strategy for international healthcare markets.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <h3>Co-Founder, Head of Strategy + Product</h3>
+            <p class="company">Oncofix.com</p>
+            <p class="dates">Apr 2022 - Nov 2022</p>
+          </div>
+          <div class="role-content">
+            <h4>SaaS Product Leadership in Oncology & Clinical Innovation</h4>
+            <ul>
+              <li>Drove rapid scale-up of a cloud-native SaaS EMR platform in oncology, onboarding 52+ oncologists for POC deployment by supporting feature readiness aligned with clinical workflows.</li>
+              <li>Co-developed a lightweight patient-centric oncology platform with the founder and oncologist, addressing systemic gaps in access, early detection and standardized workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <h3>Associate Director: Digital Analytics & Platforms</h3>
+            <p class="company">Dr. Reddy’s Laboratories</p>
+            <p class="dates">Jul 2020 - Apr 2022</p>
+          </div>
+          <div class="role-content">
+            <h4>Digital Health Platform Delivery & Risk-resilient Execution</h4>
+            <ul>
+              <li>Launched two enterprise-grade digital health platforms, Medznat.ru 2.0 and Medenrich.com, from concept to deployment across multi-country healthcare ecosystems.</li>
+              <li>Safeguarded platform continuity during the Russia–Ukraine conflict by leading a technology pivot and migration from U.S.-based systems to a compliant Russian tech stack.</li>
+              <li>Directed the complete digital solution lifecycle from vendor sourcing and architecture design to regulatory compliance, deployment and post-launch governance.</li>
+            </ul>
+            <h4>Global Digital Strategy & Emerging Market Expansion</h4>
+            <ul>
+              <li>Accelerated digital engagement across 21 countries through localized doctor and patient strategies, market-specific content and controlled budget execution.</li>
+              <li>Enabled digital transformation in Latin America, Central Asia and Southeast Europe while navigating infrastructure, compliance and linguistic complexity.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <h3>Leader: Sales, Marketing & Legal</h3>
+            <p class="company">YOptima</p>
+            <p class="dates">Sep 2018 - Jul 2020</p>
+          </div>
+          <div class="role-content">
+            <h4>Revenue Growth & Business Model Transformation</h4>
+            <ul>
+              <li>Recorded a 36% revenue uplift by transforming the core business model from agency support to a direct growth partner for unicorn startups.</li>
+              <li>Optimized sales operations, strategic marketing, legal processes and commercial operations.</li>
+            </ul>
+            <h4>Strategic Partnerships & Scalable Digital Expansion</h4>
+            <ul>
+              <li>Secured and scaled partnerships with OYO, Byju’s, Unacademy, Freshworks and Meesho across India, Southeast Asia and the U.S.</li>
+              <li>Built diversified revenue streams through audience engagement strategies, demographic intelligence and market segmentation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <h3>Manager - Business Development, Consulting & Program Management</h3>
+            <p class="company">Cognizant</p>
+            <p class="dates">May 2014 - May 2018</p>
+          </div>
+          <div class="role-content">
+            <h4>Growth Leadership & Global Consulting Excellence</h4>
+            <ul>
+              <li>Grew revenue from $500K to $2.1M across two flagship client programs, overseeing digital delivery, legal governance and IP monetization for 21 assets generating $4M in annual licensing revenue.</li>
+              <li>Co-founded a pharma digital analytics practice and secured enterprise clients including Novartis, Abbott, AbbVie and UCB Belgium.</li>
+              <li>Led a global consulting engagement for Novartis’ digital transformation in a regulated environment.</li>
+            </ul>
+            <h4>Product Commercialization & Scalable Talent Delivery</h4>
+            <ul>
+              <li>Directed commercialization and portfolio lifecycle management for a $20M product portfolio, including pricing, GTM strategy and investment prioritization.</li>
+              <li>Anchored strategic hiring programs for Google across Southeast Asia and led programmatic advertising delivery using Google DoubleClick.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <h3>Early Career</h3>
+            <p class="company">Oracle & Mindtree</p>
+            <p class="dates">Oct 2007 - Apr 2013</p>
+          </div>
+          <div class="role-content">
+            <ul>
+              <li>Senior Member Technical Staff at Oracle from Jan 2010 to Apr 2013.</li>
+              <li>Senior Software Engineer at Mindtree Limited from Oct 2007 to Dec 2009.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Education & Certifications</h2>
+        <p class="section-kicker">Business, technology and product credentials</p>
+      </div>
+      <div class="two-col">
+        <div class="mini-card">
+          <h3>Education</h3>
+          <p>MBA in Strategy and IT from ISB Hyderabad, 2014</p>
+          <p>Bachelor of Engineering from the University of Mumbai, 2007</p>
+        </div>
+        <div class="mini-card">
+          <h3>Certifications</h3>
+          <p>AWS Solutions Architect Associate - Certificate ID PNE4K541TBF11R9N</p>
+          <p>Scrum Alliance Product Owner - Certificate ID 001260404</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Last updated from resume content provided for 2026. Kindly reach out if you would like to know more about me.
+    </footer>
+  </main>
+  <a class="whatsapp-float" href="https://wa.me/919739098600?text=Hi%20Aneesh%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="Contact Aneesh on WhatsApp">
+    <span class="whatsapp-icon">✆</span> WhatsApp
+  </a>
+</body>
+</html>
