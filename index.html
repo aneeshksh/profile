@@ -12,10 +12,10 @@
       --text: #171923;
       --muted: #5f6675;
       --line: #e4e7ec;
-      --accent: #1d4ed8;
+      --accent: #1f5ca8;
       --accent-soft: #e8f1ff;
-      --accent-dark: #0f2f66;
-      --accent-mid: #2563eb;
+      --accent-dark: #14345c;
+      --accent-mid: #2f6fb7;
       --shadow: 0 20px 50px rgba(20, 20, 40, 0.08);
       --radius: 22px;
     }
@@ -173,42 +173,6 @@
       margin-bottom: 4px;
     }
 
-    .contact-float {
-      position: fixed;
-      right: 24px;
-      bottom: 24px;
-      z-index: 20;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      min-height: 52px;
-      padding: 0 18px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 800;
-      box-shadow: 0 16px 34px rgba(29, 78, 216, 0.28);
-      border: 1px solid rgba(255,255,255,0.35);
-    }
-
-    .contact-float:hover {
-      text-decoration: none;
-      transform: translateY(-1px);
-    }
-
-    .contact-icon {
-      width: 22px;
-      height: 22px;
-      display: inline-block;
-      border-radius: 999px;
-      background: #fff;
-      color: var(--accent);
-      font-size: 15px;
-      line-height: 22px;
-      text-align: center;
-      font-weight: 900;
-    }
-
     .contact-list {
       display: grid;
       gap: 12px;
@@ -241,10 +205,10 @@
     .metric span {
       display: block;
       font-size: 26px;
-      line-height: 1;
-      font-weight: 850;
-      color: var(--accent);
-      letter-spacing: -0.04em;
+      line-height: 1.08;
+      font-weight: 800;
+      color: #245b9f;
+      letter-spacing: -0.035em;
     }
 
     .metric small {
@@ -382,6 +346,87 @@
     }
 
 
+    .highlights-card {
+      justify-content: center;
+    }
+
+    .metric span {
+      overflow-wrap: anywhere;
+    }
+
+
+    .travel-section {
+      padding: 20px 28px;
+      box-shadow: none;
+      background: transparent;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .travel-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: transparent;
+    }
+
+    .travel-icon {
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      border: 1px solid #cbd5e1;
+      color: #526072;
+      font-size: 17px;
+      background: #ffffff;
+    }
+
+    .travel-card h2 {
+      font-size: 14px;
+      font-weight: 650;
+      color: var(--muted);
+      margin: 0 0 2px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .travel-card p {
+      margin: 0;
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: -0.01em;
+    }
+
+    .bottom-cta {
+      margin-top: 26px;
+      padding: 28px;
+      text-align: center;
+      background: linear-gradient(135deg, #f8fbff, #ffffff);
+    }
+
+    .bottom-cta p {
+      margin: 0 0 16px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .bottom-cta .cta-row {
+      margin-top: 0;
+      justify-content: center;
+    }
+
+    .bottom-cta .button {
+      min-width: 230px;
+    }
+
+
 
     .button.contact-trigger {
       cursor: pointer;
@@ -472,13 +517,6 @@
     }
 
     @media (max-width: 640px) {
-      .contact-float {
-        right: 16px;
-        bottom: 16px;
-        min-height: 48px;
-        padding: 0 14px;
-      }
-
       .modal-overlay {
         padding: 12px;
       }
@@ -519,7 +557,7 @@
         box-shadow: none;
         border: 1px solid #ddd;
       }
-      .button, .contact-float { display: none; }
+      .button { display: none; }
     }
   </style>
 </head>
@@ -529,7 +567,7 @@
       <div class="hero-card">
         <div class="profile-photo-wrap">
           <img class="profile-photo" src="assets/images/profile-photo.jpg" alt="Aneesh Hiremath profile photo" />
-          <div class="profile-mini"><strong>Senior Techno-Commercial Leader</strong>Product, platforms, genomics and healthtech commercialization</div>
+          <div class="profile-mini"><strong>Product, platforms & commercialization</strong> Digital transformation, Healthtech, Pharma and SaaS </div>
         </div>
         <div class="eyebrow">Senior Techno-Commercial Leader</div>
         <h1>Aneesh Hiremath</h1>
@@ -538,22 +576,19 @@
           Product operations and strategy leader with 17+ years of cross-industry experience across healthcare, digital platforms, enterprise technology and innovation-led startups. Experienced in product lifecycle management, commercialization, portfolio growth, product analytics, cross-functional governance and GTM execution in regulated, multi-market environments.
         </p>
         <div class="cta-row">
-           <a class="button" href="https://forms.gle/fTtEmwprJBv1NypG9" target="_blank"  rel="noopener"> Request Contact Details </a>
           <a class="button" href="https://www.linkedin.com/in/aneeshhiremath/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button primary" href="https://forms.gle/fTtEmwprJBv1NypG9" target="_blank" rel="noopener">Request Contact Details</a>
         </div>
       </div>
 
-      <aside class="side-card">
-        <div class="contact-list">
-          <div><strong>Contact</strong><button class="button contact-trigger" type="button" data-open-contact>Request contact details</button></div>
-          <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/aneeshhiremath/" target="_blank" rel="noopener">linkedin.com/in/aneeshhiremath</a></div>
-          <div class="contact-note">Direct phone and email are shared after a short recruiter/contact request. This helps reduce spam while keeping the page publicly shareable.</div>
-        </div>
+      <aside class="side-card highlights-card">
         <div class="metric-grid">
           <div class="metric"><span>17+</span><small>Years across tech, healthcare, SaaS and platforms</small></div>
           <div class="metric"><span>$20M</span><small>Product portfolio commercialization experience</small></div>
           <div class="metric"><span>$7.5M</span><small>Product performance and pipeline analytics tracked</small></div>
           <div class="metric"><span>21</span><small>Countries supported through digital strategy</small></div>
+          <div class="metric"><span>Cross-functional</span><small>Ability to go deep technically while also managing legal, finance, operations and business functions</small></div>
+          <div class="metric"><span>Multi-national</span><small>Exposure across multilingual, multicultural and diverse market settings</small></div>
         </div>
       </aside>
     </section>
@@ -588,7 +623,7 @@
     <section class="section">
       <div class="section-header">
         <h2>Work Experience</h2>
-        <p class="section-kicker">Selected achievements and leadership themes</p>
+        <p class="section-kicker">Cross Functional Leadership, High Agency & Ownership</p>
       </div>
 
       <div class="experience">
@@ -727,12 +762,28 @@
       </div>
     </section>
 
+
+    <section class="section travel-section">
+      <div class="travel-card">
+        <div class="travel-icon" aria-hidden="true">✈</div>
+        <div>
+          <h2>Travel Approvals</h2>
+          <p>US B1/B2 Visa</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bottom-cta">
+      <p>Let’s connect and explore relevant opportunities.</p>
+      <div class="cta-row">
+        <a class="button primary" href="https://www.linkedin.com/in/aneeshhiremath/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="https://forms.gle/fTtEmwprJBv1NypG9" target="_blank" rel="noopener">Request Contact Details</a>
+      </div>
+    </section>
+
     <footer>
-      Last updated from resume content provided for 2026. Kindly reach out if you would like to know more about me.
+      Last updated May 2026.
     </footer>
   </main>
-  <a class="whatsapp-float" href="https://wa.me/919739098600?text=Hi%20Aneesh%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="Contact Aneesh on WhatsApp">
-    <span class="whatsapp-icon">✆</span> WhatsApp
-  </a>
 </body>
 </html>
